@@ -48,6 +48,33 @@ Three delivery status is allowed including "started", "arriving" and "delivered"
 `curl -X POST -v http://localhost:5000/orders/f9f363d1-e1c2-4595-b477-c649845bc952/restaurantdelivery/status -H 'authorization: 740becc4b623786cc812c956a5afb30e' -H 'Content-Type: application/json' -d '{"status": "delivered"}'`{{execute}}
 
 # 2.2 unit test
+
+The unit test of order service contains 24 test cases.
+1.Handle order successfully with HTTP response code 200
+2.Handle orders successfully with HTTP response code 200
+3.Handle order with paused store unsuccessfully with HTTP response code 409
+4.Handle order with existent order_id unsuccessfully with HTTP response code 409
+5.Get order successfully with HTTP response code 200
+6.Get order with incorrect order id unsuccessfully with HTTP response code 404
+7.Get created orders successfully with HTTP response code 200
+8.Get created orders with limitation successfully with HTTP response code 200
+9.Get created orders returned empty result successfully with HTTP response code 200
+10.Get canceled orders successfully with HTTP response code 200
+11.Get canceled orders returned empty result successfully with HTTP response code 200
+12.Accept order successfully with HTTP response code 204
+13.Accept order with nonexistent order_id unsuccessfully with HTTP response code 404
+14.Accept order with incorrect state unsuccessfully with HTTP response code 409
+15.Deny order successfully with HTTP response code 204
+16.Deny order with nonexistent order_id unsuccessfully with HTTP response code 404
+17.Deny order with incorrect state unsuccessfully with HTTP response code 409
+18.Cancel order successfully with HTTP response code 204
+19.Cancel order with nonexistent order_id unsuccessfully with HTTP response code 404
+20.Cancel order with incorrect state unsuccessfully with HTTP response code 409
+21.Update order's delivery status successfully with HTTP response code 204
+22.Update order's delivery status with nonexistent order_id unsuccessfully with HTTP response code 404
+23.Update order's delivery status with incorrect state unsuccessfully with HTTP response code 409
+24.Update order's delivery status with incorrect delivery state unsuccessfully with HTTP response code 400
+
 To install pytest and redis
 
 `python3 -m pip install pytest`{{execute}}
