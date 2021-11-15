@@ -30,4 +30,3 @@ Try the command as follows and check the response
 
 `curl -X POST -v http://localhost:5000/order -H 'Content-Type: application/json' -d @./order_service/sample_order_data.json`{{execute}}
 
-The permission depied 
