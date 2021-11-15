@@ -10,7 +10,7 @@ First, a client sent an order to the API. The API will notify the store. After r
 
 After the order is handled, the client can conduct the operations as follows.
 
-* /order/\<order_id\>: get an order information
+* /order/<\order_id>\: get an order information
 
 `curl -v http://localhost:5000/order/f9f363d1-e1c2-4595-b477-c649845bc952 -H 'authorization: 740becc4b623786cc812c956a5afb30e'`{{execute}}
 
