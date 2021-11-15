@@ -9,6 +9,10 @@ Build the docker images using the Dockerfile in the folders
 
 `docker-compose up`{{execute}}
 
+Open another terminal and enther the repository folder to continually practice 
+
+`cd COMP3122-Project`{{execute}}
+
 Check the built images
 
 `docker images`{{execute}}
@@ -26,11 +30,16 @@ Register a token
 
 `curl -X POST -v http://localhost:5000/authentication/get_token -H 'Content-Type: application/json' -d '{"username":"comp3122", "password": "comp3122"}'`{{execute}}
 
-In the Eat API, all HTTP requests from clients must attach a token in the header.  The API will authenticate the token. If it is missing or unavailable, the access will be denied. Try the commands as follow and check the response.
+In the Eat API, all HTTP requests from clients must attach a token in the header.  The API will authenticate the token. If it is missing or unavailable, the access will be denied. 
 
-request without token
+Now you got a token. In the following sessions, a default token is already added to commands in order to reduce complexity in performing commands. However, you can use your token to replace it. 
+
+Try the commands as follow and check the response.
+
+Request without token
 
 `curl -X POST -v http://localhost:5000/order -H 'Content-Type: application/json' -d @./order_service/sample_order_data.json`{{execute}}
 
-request with token
+Request with token
+
 `curl -X POST -v http://localhost:5000/order -H 'authorization: 740becc4b623786cc812c956a5afb30e' -H 'Content-Type: application/json' -d @./order_service/sample_order_data.json`{{execute}}
