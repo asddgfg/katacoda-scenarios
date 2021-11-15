@@ -1,8 +1,4 @@
-# Heading for Step 1
+# Clone the EAT API
 
-This is some text.
-
-Here's a single line of runnable code:
-
-`printf 'Hello, world!\n\n'`{{execute}}
+`git clone https://github.com/Ethan7102/COMP3122-Project.git`{{execute}}
 
