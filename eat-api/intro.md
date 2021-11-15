@@ -20,29 +20,33 @@
 │   ├── authentication_service.py
 │   ├── initialze.py
 │   └── README.md
-├── reverse proxy.png
-├── reverse_proxy
-│   └── nginx.conf
-├── temperature_service
+├── order_service
+│   ├── Dockerfile
+│   ├── order_service.py
+│   ├── sample_order_data.json
+│   ├── sample_order_data2.json
+│   └── README.md
+├── store_service
 │   ├── Dockerfile
 │   ├── requirements.txt
-│   └── temperature_server.py
-└── weather_report
-    ├── Dockerfile
-    ├── README.md
-    ├── babel.config.js
-    ├── nginx.conf
-    ├── package-lock.json
-    ├── package.json
-    ├── public
-    │   ├── favicon.ico
-    │   └── index.html
-    ├── src
-    │   ├── App.vue
-    │   ├── assets
-    │   │   └── logo.png
-    │   ├── components
-    │   │   └── HelloWorld.vue
-    │   └── main.js
-    └── yarn.lock
+│   └── store_service.py
+├── menu_service
+│   ├── Dockerfile
+│   ├── menu_service.py
+│   ├── menu_data.json
+│   ├── update_menu.json
+│   ├── requirements.txt
+│   └── README.md
+├── gateway_api
+│   ├── Dockerfile
+│   └── gateway_api.py
+├── lib
+│   ├── domain_model.py
+│   └── event_store.py
+└── grafana
+    ├── dashboards
+    │   ├── default.yaml
+    │   └── mydashboard.json
+    └── datasources
+        └── default.yaml
 ```
