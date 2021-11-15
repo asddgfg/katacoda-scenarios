@@ -6,19 +6,23 @@
   "details": {
     "steps": [
       {
-        "title": "Authentication service",
+        "title": "Authentication microservice",
         "text": "step1.md"
       },
       {
-        "title": "Order service",
+        "title": "Order microservice",
         "text": "step2.md"
       },
       {
-        "title": "Store service",
+        "title": "Store microservice",
         "text": "step3.md"
       },
       {
-        "title": "Menu service",
+        "title": "Menu microservice",
+        "text": "step4.md"
+      },
+      {
+        "title": "listener microservice",
         "text": "step4.md"
       }
     ],
