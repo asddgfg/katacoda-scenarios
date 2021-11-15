@@ -1,8 +1,27 @@
-# Heading for Step 3
+# 4.1 supporting services by menu microservice
 
-This is some text.
+The Menu microservice support various functions as follows:
 
-Here's a single line of runnable code:
+/<store_id>/menus: upload a menu in specific store
+curl -X PUT -v http://localhost:5000/c124/menus -H 'authorization: 740becc4b623786cc812c956a5afb30e' -H 'Content-Type: application/json' -d @./menu_service/menu_data.json{{execute}}
 
-`printf 'Cello, world!\n\n'`{{execute}}
+/<store_id>/menus/items: update menu in specific store
+curl -X POST -v http://localhost:5000/c124/menus/items -H 'authorization: 740becc4b623786cc812c956a5afb30e' -H 'Content-Type: application/json' -d @./menu_service/update_menu.json{{execute}}
 
+/<store_id>/menus: get specific store's menu
+curl -v http://localhost:5000/c124/menus -H 'authorization: 740becc4b623786cc812c956a5afb30e'{{execute}}
+
+# 4.2 Test case of menu service
+
+The test case of menu service contains four test cases.
+
+1. Upload menu successfully with HTTP response code 200
+2. Update menu successfully with HTTP response code 200
+3. Get menu successfully with HTTP response code 200
+4. Get menu failed (Store's menu not found) with HTTP response code 404
+
+To run the test, we need to install pytest, Execute
+python3 -m pip install pytest{{execute}}
+
+After installed the pytest, Execute
+pytest -v test_menu_service.py{{execute}}
