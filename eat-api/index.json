@@ -1,12 +1,12 @@
 {
-  "title": "New Scenario Template",
-  "description": "A simple scenario example.",
+  "title": "Eat API",
+  "description": "a REST API service",
   "difficulty": "Beginner",
-  "time": "3 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Authentication_service",
         "text": "step1.md"
       },
       {
