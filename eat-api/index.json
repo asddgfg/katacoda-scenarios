@@ -6,15 +6,19 @@
   "details": {
     "steps": [
       {
-        "title": "Authentication_service",
+        "title": "Authentication service",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Order service",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Store service",
+        "text": "step3.md"
+      },
+      {
+        "title": "Menu service",
         "text": "step3.md"
       }
     ],
