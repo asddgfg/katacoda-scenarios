@@ -1,6 +1,8 @@
 {
   "title": "Eat API",
   "description": "a REST API service",
+  "difficulty": "Beginner",
+  "time": "5 minutes",
   "details": {
     "steps": [
       {
