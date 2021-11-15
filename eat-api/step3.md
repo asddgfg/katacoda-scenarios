@@ -42,7 +42,7 @@ The store microservice support various functions as follows:
 
 
 
-# 3.2 Test case of menu service
+# 3.2 Test case of store service
 
 The test case of store service contains four test cases.
 
