@@ -56,4 +56,4 @@ To install pytest and redis
 
 Perform unit test
 
-`python3 -m pytest -v test_order_serivce.py`{{execute}}
+`python3 -m pytest -v test_order_service.py`{{execute}}
